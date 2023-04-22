@@ -1,0 +1,50 @@
+.philosophy{
+    padding: 69px 0px 100px;
+    .layout-2-column>*{
+        flex-basis: auto;
+    }
+}
+
+.philosophy__title{
+    margin: 0px auto 55px;
+    text-align: center;
+}
+
+.philosophy__image{
+    margin: 0px 52px 0px 70px;
+}
+
+.philosophy__part{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 29px;
+}
+
+.philosophy__part-text{
+    margin: 0px 97px 0px 17px;
+    width: 305px;
+    @include font($size:1.8rem, $height:2.6rem);
+    color:$color-text;
+}
+
+.philosophy__content{
+    width:692px;
+    margin-top: 20px;
+    .button{
+        margin-top: 190px;
+    }
+}
+
+.philosophy__arrow{
+    margin-top: 40px;
+}
+
+#arr{
+    margin-left: 141px;
+    margin-right: 67px;
+}
+
+#middle-text{
+    margin-right: 0px;
+}

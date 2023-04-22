@@ -1,0 +1,37 @@
+.navigation__link{
+    display:inline;
+    list-style: none;
+    padding: 0 43px;
+    cursor: pointer;
+    @extend %transition;
+    &:hover{
+        color: $color-text;
+    }
+}
+
+
+.account-navigation{
+    background-color: $color-table-headings;
+    box-sizing: border-box;
+    width:370px;
+    max-height: 100%;
+    padding: 70px 0 0 120px;
+    .navigation{
+        display:flex;
+        flex-direction: column;
+    }
+    ul, ul>*, p{
+        padding: 0;
+        @include font($size:2.4rem, $height:6rem);
+        @extend %font-primary;
+        color: $color-text;
+    }
+    img{
+        width: 102px;
+        margin-bottom: 47px;
+    }
+    p{
+        margin-top: 111px;
+        margin-bottom: 136px;
+    }
+}

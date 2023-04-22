@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Личный кабинет</title>
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="../sass/style.css">
+    <link rel="icon" href="../resource/logo.svg" type="image/svg">
+</head>
+<body>
+<header class="header header__account">
+    <div class="wrapper header__wrapper">
+        <div class="header__return">
+            <a class="return" href="#"><p>&lt; Главная</p></a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="navigation">
+                <li class="navigation__link">Меню</li>
+                <li class="navigation__link">О нас</li>
+                <li class="navigation__link">Доставка</li>
+                <li class="navigation__link">Контакты</li>
+            </ul>
+        </nav>
+        <div class="header__button">
+            <button class="button button_not-authorized">
+                <a href="#" class="link-button">
+                    <img class="button_icon" src="../resource/user.svg">
+                    <p class="button_text">Авторизоваться</p>
+                </a>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="personal-account">
+        <aside class="account-navigation">
+            <div class="wrapper account-navigation__wrapper">
+                <img src="../resource/user.svg">
+                <ul class="navigation">
+                    <li class="navigation__link">Мои данные</li>
+                    <li class="navigation__link">Адреса доставки</li>
+                    <li class="navigation__link">Мои заказы</li>
+                    <li class="navigation__link">Мои карты</li>
+                    <li class="navigation__link">Сменить аккаунт</li>
+                </ul>
+                <p class="questions">Есть вопросы?</p>
+            </div>
+        </aside>
+        <section class="account__personal-data">
+            <div class="wrapper account__wrapper">
+                <form class="layout-2-column">
+                    <div class="personal-data">
+                        <label for="name">Имя</label>
+                        <input id="name">
+                    </div>
+                    <div class="personal-data">
+                        <label for="surname">Фамилия</label>
+                        <input id="surname">
+                    </div>
+                    <div class="personal-data">
+                        <label for="phone-number">Телефон</label>
+                        <input id="phone-number">
+                    </div>
+                    <div class="personal-data">
+                        <label for="email">Почта</label>
+                        <input id="email">
+                    </div>
+                    <div class="personal-data">
+                        <label for="birthday">Дата Рождения</label>
+                        <input id="birthday">
+                    </div>
+                    <div class="personal-data">
+                        <label for="discount">Постоянная скидка</label>
+                        <input id="discount">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="footer-navigation layout-4-column">
+            <div class="footer__column">
+                <h4 class="footer-navigation__title">Способы оплаты</h4>
+                <ul class="footer-navigation__links">
+                    <li><a href="#">Привязка карты</a></li>
+                    <li><a href="#">Условия оплаты</a></li>
+                    <li><a href="#">Защита ваших данных</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer-navigation__title">Доставка</h4>
+                <ul class="footer-navigation__links">
+                    <li><a href="#">Условия</a></li>
+                    <li><a href="#">Зона доставки</a></li>
+                    <li><a href="#">Время доставки</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer-navigation__title">Партнеры</h4>
+                <ul class="footer-navigation__links">
+                    <li><a href="#">Кофейня “Kava i kvetki”</a></li>
+                    <li><a href="#">Сеть магазинов “Гиппо”</a></li>
+                    <li><a href="#">Сеть магазинов “Соседи”</a></li>
+                </ul>
+            </div>
+            <div class="footer__column networks__column">
+                <h4 class="footer-navigation__title">Подпишитесь</h4>
+                <ul class="footer-navigation__links networks">
+                    <li><a href="#"><img src="../resource/fb.png"></a></li>
+                    <li><a href="#"><img src="../resource/inst.png"></a></li>
+                    <li><a href="#"><img src="../resource/youtube.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

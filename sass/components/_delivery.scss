@@ -1,0 +1,43 @@
+.delivery{
+    padding:69px 0px 100px 0px;
+}
+
+.delivery__title{
+    margin: 0px auto;
+    text-align: center;
+}
+
+.step__text{
+    color:$color-text;
+    @include font($size:1.8rem, $height:2.6rem);
+    margin: 0px;
+}
+
+.delivery__step::before{
+    float:left;
+    color: #F5C231;
+    @include font($size:12rem, $height:10rem);
+    @extend %font-primary;
+    margin: 125px 35px 0px;
+}
+
+#first_step::before{
+    content: "1";
+}
+
+#second_step::before{
+    content: "2";
+}
+
+#third_step::before{
+    content: "3";
+}
+
+.step__title{
+    margin: 70px 0px 6px;
+}
+
+.delivery-man{
+    margin-left: 732px;
+    margin-top: 48px;
+}

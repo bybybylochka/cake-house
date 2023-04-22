@@ -1,0 +1,51 @@
+.entry, .registration{
+  background: $color-footer-headings;
+  width:834px;
+  padding: 73px 110px;
+  box-sizing: border-box;
+  margin: 50px auto 136px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.entry__title, .registration__title{
+  text-align: center;
+  margin: 0px;
+}
+
+.entry__offer-registration, .registration__offer-entry{
+  text-align: center;
+  @include font($size:1.6rem, $height:2.4rem);
+}
+
+.link-registration, .link-entry{
+  text-decoration: none;
+  color:$color-text;
+}
+
+.entry__form, .registration__form{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  >*{
+    @include font($size:2.8rem, $height:6rem);
+    @extend %font-primary;
+  }
+  input{
+    margin-bottom: 20px;
+  }
+  label{
+    color:$color-text;
+  }
+  button{
+    margin: 46px auto 0;
+  }
+}
+.link__forgot-password{
+  position: absolute;
+  top:225px;
+  right:20px;
+  color:$color-text;
+  @include font($size:1.6rem, $height:2.3rem);
+}
+

@@ -1,0 +1,60 @@
+.advantages{
+    padding: 69px 0px 100px;
+}
+
+.advantages__title{
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+.advantage__title{
+    margin: 10px 0px;
+}
+
+.advantage__text{
+    margin: 0;
+    color: $color-text;
+    @include font($size:1.8rem, $height:2.6rem);
+}
+
+.advantage{
+    margin-bottom: 35px;
+}
+
+.advantages__content{
+    margin-top: 70px;
+}
+
+.advantage::before{
+    float:left;
+    margin: 74px 33px 0 0;
+}
+
+.ad1::before{
+    content: url("../resource/advan1.svg");
+}
+
+.ad2::before{
+    content: url("../resource/advan2.svg");
+}
+
+.ad3::before{
+    content: url("../resource/advan3.svg");
+}
+
+
+.ad4::before{
+    content: url("../resource/advan4.svg");
+}
+
+.ad5::before{
+    content: url("../resource/advan5.svg");
+}
+
+.ad6::before{
+    content: url("../resource/advan6.svg");
+}
+
+#muffins{
+    margin-top: 57px;
+}

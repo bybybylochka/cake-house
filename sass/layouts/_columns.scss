@@ -1,0 +1,9 @@
+.layout-3-column{
+    @include columns(30%);
+}
+.layout-2-column{
+    @include columns(46%);
+}
+.layout-4-column{
+    @include columns(25%);
+}

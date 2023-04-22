@@ -1,0 +1,18 @@
+.header{
+    padding: 26.5px 0px;
+    @include font($size:1.8rem, $height:2.6rem, $weight:500);
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__account{
+    background: url("../resource/account-nav.png") no-repeat left;
+}
+
+.header__return>*{
+    color: $color-headings;
+    text-decoration: none;
+}

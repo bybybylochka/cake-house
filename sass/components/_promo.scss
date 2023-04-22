@@ -1,0 +1,22 @@
+.promo{
+    padding: 86.5px 0px;
+}
+
+.promo__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__content{
+    width: 60%;
+}
+
+.promo__title{
+    margin-bottom: 33px;
+}
+
+.promo__text{
+    margin-bottom: 96px;
+    width:80%;
+    color:$color-text;
+}

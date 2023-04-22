@@ -1,0 +1,39 @@
+html{
+    font-size: 10px;
+}
+.body{
+    @extend %font-add;
+    @include font($size:2rem, $height:2.9rem);
+    background-color: $color-background;
+    margin: 0;
+    background: url(../resource/cheesecake.svg), url(../resource/grey.svg);
+    background-position: top 35px right 28px, left 0px top 688px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 100%;
+}
+body{
+    @extend %font-add;
+    @include font($size:2rem, $height:2.9rem);
+    background-color: $color-background;
+    margin: 0;
+}
+h1, h2, h3, h4, h5{
+    @extend %font-primary;
+}
+h1{
+    @include font($size:6rem, $height:6.2rem);
+}
+h2{
+    @include font($size:5.5rem, $height:6rem);
+}
+h4{
+    @include font($size:3rem, $height:6rem);
+}
+h5{
+    @include font($size:2.4rem, $height:6rem);
+}
+
+.body-entry{
+    background: url(../../resource/fon_entr.png) no-repeat top;
+    background-size: 100%;
+}

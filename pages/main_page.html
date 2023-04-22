@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Главная</title>
+        <link href="" rel="stylesheet">
+        <link rel="stylesheet" href="../sass/style.css">
+        <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <div class="header__logo">
+                    <a class="logo" href="#"><img src="../resource/logo.svg"></a>
+                </div>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link">Меню</li>
+                        <li class="navigation__link">О нас</li>
+                        <li class="navigation__link">Доставка</li>
+                        <li class="navigation__link">Контакты</li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <button class="button button_not-authorized">
+                        <a href="#" class="link-button">
+                            <img class="button_icon" src="../resource/user.svg">
+                            <p class="button_text">Авторизоваться</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="promo">
+                <div class="wrapper promo__wrapper">
+                    <div class="promo__content">
+                        <h1 class="promo__title">Делаем десерты, которые понравятся каждому</h1>
+                        <p class="promo__text">Наша кондитерская сделает для вас десерты различного исполнения с учетом всех пожеланий</p>
+                        <div class="promo__button">
+                            <a href="#" class="link-button">
+                                <button class="button button_colored">Заказать десерт
+                                    <hr class="button__line">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular-products">
+                <div class="wrapper popular-products__wrapper">
+                    <h2 class="popular-products__title">Самое вкусное на этой неделе</h2>
+                    <div class="layout-3-column">
+                        <div class="popular-product">
+                            <div class="popular-product__image" >
+                                <img src="../resource/popular1.svg"> 
+                            </div>
+                            <h4 class="popular-product__title">Малиновые пончики</h4>
+                            <p class="popular-product__text">Сладкие пышки, политые сладкой малиновой глазурью</p>
+                        </div>
+                        <div class="popular-product">
+                            <div class="popular-product__image" id="the-most-popular">
+                                <img src="../resource/popular2.svg"> 
+                            </div>
+                            <h4 class="popular-product__title">Меренговый венок Павлова</h4>
+                            <p class="popular-product__text">Хрустящая меренга, покрытая нежными взбитыми сливками и свежими ягодами</p>
+                        </div>
+                        <div class="popular-product">
+                            <div class="popular-product__image" >
+                                <img src="../resource/popular3.svg"> 
+                            </div>
+                            <h4 class="popular-product__title">Эклеры</h4>
+                            <p class="popular-product__text">Воздушные пирожные из заварного теста с начинкой</p>
+                        </div>
+                    </div>
+                    <div class="popular-product__button">
+                        <button class="button button_colored">Смотреть все
+                            <hr class="button__line">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="wrapper advantages__wrapper">
+                    <h2 class="advantages__title">Готовим с душой более 10 лет</h2>
+                    <div class="layout-2-column">
+                        <div class="advantages__content">
+                            <div class="advantage ad1">
+                                <h4 class="advantage__title">Натуральные ингредиенты</h4>
+                                <p class="advantage__text">При приготовлении десертов  мы используем исключительно натуральные качественные продукты</p>
+                            </div>
+                            <div class="advantage ad2">
+                                <h4 class="advantage__title">Качественное оборудование</h4>
+                                <p class="advantage__text">На наших кухнях используется сертифицированная кулинарная техника немецкого производителя Miele</p>
+                            </div>
+                            <div class="advantage ad3">
+                                <h4 class="advantage__title">Классические рецепты</h4>
+                                <p class="advantage__text">Воздушные эклеры, нежные чизкейки, хрустящие багеты - все готовится по рецептам со всего мира</p>
+                            </div>
+                        </div>
+                        <div class="advantages__image">
+                            <img src="../resource/advatages1.svg">
+                        </div>
+                    </div>
+                    <div class="layout-2-column">
+                        <div class="advantages__image">
+                            <img src="../resource/advantages2.svg" id="muffins">
+                        </div>
+                        <div class="advantages__content">
+                            <div class="advantage ad4">
+                                <h4 class="advantage__title">Широкий ассортимент</h4>
+                                <p class="advantage__text">Мы предлагаем клиентам большой выбор десертов и выпечки: от французской до японской кухни</p>
+                            </div>
+                            <div class="advantage ad5">
+                                <h4 class="advantage__title">Индивидуальный подход</h4>
+                                <p class="advantage__text">В нашей кондитерской вы можете заказать десерт по своим запросам, выбрав дизайн и вес блюда</p>
+                            </div>
+                            <div class="advantage ad6">
+                                <h4 class="advantage__title">Забота о природе</h4>
+                                <p class="advantage__text">При упаковке десертов мы используем исключительно бумажные пакеты и картонные коробки </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="delivery">
+                <div class="wrapper delivery__wrapper">
+                    <h2 class="delivery__title">
+                        Когда вы попробуете свой десерт?
+                    </h2>
+                    <div class="layout-3-column">
+                        <div class="delivery__step" id="first_step">
+                            <h4 class="step__title">Заказ</h4>
+                            <p class="step__text">Вы выбираете понравившиеся десерты и в несколько кликов оформляете заказ на сайте</p>
+                        </div>
+                        <div class="delivery__step" id="second_step">
+                            <h4 class="step__title">Доставка</h4>
+                            <p class="step__text">В течение 1-2 часов (в зависимости от адреса) заказ будет доставлен курьером</p>
+                        </div>
+                        <div class="delivery__step" id="third_step">
+                            <h4 class="step__title">Получение</h4>
+                            <p class="step__text">При способе оплаты заказа наличными или картой вы расплачиваетесь с курьером</p>
+                        </div>
+                    </div>
+                    <div class="delivery-man">
+                        <img src="../resource/delivery.svg">
+                    </div>
+                </div>
+            </section>
+            <section class="weekly-basket">
+                <div class="wrapper weekly-basket__wrapper">
+                    <h2 class="weekly-baskets__title">Еженедельная корзина</h2>
+                    <div class="layout-2-column">
+                        <div class="weekly-basket__content">
+                            <h4 class="weekly-basket__title">No 1. Sweet box</h4>
+                            <p class="weekly-basket__text">Получайте свежие десерты и выпечку каждую неделю с бесплатной доставкой на дом! Для этого подпишитесь на любимую корзину</p>
+                            <div class="layout-3-column">
+                                <div class="weekly-basket__part">
+                                    <img class="part__image" src="../resource/bagets.svg">
+                                    <p class="part__name">2 багета</p>
+                                </div>
+                                <div class="weekly-basket__part">
+                                    <img class="part__image" src="../resource/bun.svg">
+                                    <p class="part__name">3 булочки</p>
+                                </div>
+                                <div class="weekly-basket__part">
+                                    <img class="part__image" src="../resource/bread.svg">
+                                    <p class="part__name">1 ржаной</p>
+                                </div>
+                            </div>
+                            <img class="weekly-basket__line" src="../resource/Line.svg">
+                            <button class="button button_colored">Подписаться
+                                <hr class="button__line">
+                            </button>
+                        </div>
+                        <div class="weekly-basket__image">
+                            <img src="../resource/basket.svg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="philosophy">
+                <div class="wrapper philosophy__wrapper">
+                    <h2 class="philosophy__title">Наша философия</h2>
+                    <div class="layout-2-column">
+                        <div class="philosophy__image">
+                            <img src="../resource/cook.svg">
+                        </div>
+                        <div class="philosophy__content">
+                            <div class="philosophy__part">
+                                <img class="philosophy__part-number" src="../resource/01.svg">
+                                <p class="philosophy__part-text">
+                                    Cake House использует исключительно классические рецепты десертов, проверенные годами
+                                </p>
+                                <img class="philosophy__arrow" src="../resource/vector1.svg">
+                            </div>
+                            <div class="philosophy__part">
+                                <img class="philosophy__arrow" src="../resource/vector2.svg" id="arr">
+                                <img class="philosophy__part-number" src="../resource/02.svg">
+                                <p class="philosophy__part-text" id="middle-text">
+                                    Наша команда состоит из опытных поваров-кондитеров со стажем не менее 10 лет
+                                </p>
+                            </div>
+                            <div class="philosophy__part">
+                                <img class="philosophy__part-number" src="../resource/03.svg">
+                                <p class="philosophy__part-text">
+                                    При изготовлении десертов мы не используем усилители вкуса и запаха,  заменители сахара
+                                </p>
+                            </div>
+                            <button class="button button_colored">Подробнее
+                                <hr class="button__line">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="instagram">
+                <div class="wrapper instagram__wrapper">
+                    <h2 class="instagram__title">
+                        Наш Instagram
+                    </h2>
+                    <div class="layout-3-column">
+                        <div>
+                            <img src="../resource/inst1.png" class="instagram__photo">
+                        </div>
+                        <div>
+                            <img src="../resource/inst2.png" class="instagram__photo">
+                        </div>
+                        <div>
+                            <img src="../resource/inst3.png" class="instagram__photo">
+                        </div>
+                    </div>
+                    <div class="layout-3-column">
+                        <div>
+                            <img src="../resource/inst4.png" class="instagram__photo">
+                        </div>
+                        <div>
+                            <img src="../resource/inst5.png" class="instagram__photo">
+                        </div>
+                        <div>
+                            <img src="../resource/inst6.png" class="instagram__photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="wrapper contacts__wrapper">
+                    <div class="layout-2-column">
+                        <div class="contacts__content">
+                            <h2 class="contacts__title">Будем вам рады!</h2>
+                            <div class="contacts__phone">
+                                <h4>Прием заказов:</h4>
+                                <p>+375 29 331-33-11 (все операторы)</p>
+                            </div>
+                            <div class="contacts__address">
+                                <h4>Адрес кондитерской:</h4>
+                                <p>Минск, ул. Кальварийская, д.14</p>
+                            </div>
+                        </div>
+                        <div class="contacts__map">
+                            <div class="map" style="position:relative;width:712px;height: 520px;"><a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a href="https://yandex.by/maps/157/minsk/house/Zk4YcwRiTEEBQFtpfXVxd3tkYw==/?ll=27.532546%2C53.906777&utm_medium=mapframe&utm_source=maps&z=16.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кальварийская улица, 16 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.532546%2C53.906777&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDg2NTM2MjE3EknQkdC10LvQsNGA0YPRgdGMLCDQnNGW0L3RgdC6LCDQmtCw0LvRjNCy0LDRgNGL0LnRgdC60LDRjyDQstGD0LvRltGG0LAsIDE2IgoNp0LcQRWKoFdC&z=16.51" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer-navigation layout-4-column">
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Способы оплаты</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Привязка карты</a></li>
+                            <li><a href="#">Условия оплаты</a></li>
+                            <li><a href="#">Защита ваших данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Доставка</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Условия</a></li>
+                            <li><a href="#">Зона доставки</a></li>
+                            <li><a href="#">Время доставки</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Партнеры</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Кофейня “Kava i kvetki”</a></li>
+                            <li><a href="#">Сеть магазинов “Гиппо”</a></li>
+                            <li><a href="#">Сеть магазинов “Соседи”</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column networks__column">
+                        <h4 class="footer-navigation__title">Подпишитесь</h4>
+                        <ul class="footer-navigation__links networks">
+                            <li><a href="#"><img src="../resource/fb.png"></a></li>
+                            <li><a href="#"><img src="../resource/inst.png"></a></li>
+                            <li><a href="#"><img src="../resource/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

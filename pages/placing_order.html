@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Оформление заказа</title>
+        <link href="" rel="stylesheet">
+        <link rel="stylesheet" href="../sass/style.css">
+        <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <div class="header__logo">
+                    <a class="logo" href="#"><img src="../resource/logo.svg"></a>
+                </div>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link">Меню</li>
+                        <li class="navigation__link">О нас</li>
+                        <li class="navigation__link">Доставка</li>
+                        <li class="navigation__link">Контакты</li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <button class="button button_not-authorized">
+                        <a href="#" class="link-button">
+                            <img class="button_icon" src="../resource/user.svg">
+                            <p class="button_text">Авторизоваться</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="placing-order">
+                <div class="wrapper placing-order__wrapper">
+                    <h2 class="placing-order__title">Оформление заказа</h2>
+                    <div class="placing-order__navigation">
+                        <h5 class="order__nav-block__name">Ваша корзина</h5>
+                        <h5 class="order__nav-block__name">Контакты</h5>
+                        <h5 class="order__nav-block__name">Способ доставки</h5>
+                        <h5 class="order__nav-block__name">Способ оплаты</h5>
+                    </div>
+                    <table class="placing-order__cart">
+                        <thead>
+                            <th class="cart__header">Наименование</th>
+                            <th class="cart__header">Количество</th>
+                            <th class="cart__header">Сумма</th>
+                            <th class="cart__header">Удалить</th>
+                        </thead>
+                        <tbody>
+                            <tr class="cart__product">
+                                <td class="product">
+                                    <img class="product__image" src="../resource/cheesecake.png">
+                                    <div class="product__short-description">
+                                        <h5 class="product__title">Чизкейк "Нью-Йорк"</h5>
+                                        <p class="product__weight">700 г</p>
+                                    </div>
+                                </td>
+                                <td class="product__quantity">
+                                    <div class="quantity__decrease">&lt;</div>
+                                    <div class="quantity">1</div>
+                                    <div class="quantity__increase">&gt;</div>
+                                </td>
+                                <td class="product__price">
+                                    <p>90 BYN</p>
+                                </td>
+                                <td class="product__remover">
+                                    <img src="../resource/x.png">
+                                </td>
+                            </tr>
+                            <tr class="cart__product">
+                                <td class="product">
+                                    <img class="product__image" src="../resource/cheesecake.png">
+                                    <div class="product__short-description">
+                                        <h5 class="product__title">Чизкейк "Нью-Йорк"</h5>
+                                        <p class="product__weight">700 г</p>
+                                    </div>
+                                </td>
+                                <td class="product__quantity">
+                                    <div class="quantity__decrease">&lt;</div>
+                                    <div class="quantity">1</div>
+                                    <div class="quantity__increase">&gt;</div>
+                                </td>
+                                <td class="product__price">
+                                    <p>90 BYN</p>
+                                </td>
+                                <td class="product__remover">
+                                    <img src="../resource/x.png">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart__buttons">
+                        <button class="button button_not-colored">Введите промокод</button>
+                        <button class="button button_colored">Применить
+                            <hr class="button__line">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer-navigation layout-4-column">
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Способы оплаты</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Привязка карты</a></li>
+                            <li><a href="#">Условия оплаты</a></li>
+                            <li><a href="#">Защита ваших данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Доставка</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Условия</a></li>
+                            <li><a href="#">Зона доставки</a></li>
+                            <li><a href="#">Время доставки</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer-navigation__title">Партнеры</h4>
+                        <ul class="footer-navigation__links">
+                            <li><a href="#">Кофейня “Kava i kvetki”</a></li>
+                            <li><a href="#">Сеть магазинов “Гиппо”</a></li>
+                            <li><a href="#">Сеть магазинов “Соседи”</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column networks__column">
+                        <h4 class="footer-navigation__title">Подпишитесь</h4>
+                        <ul class="footer-navigation__links networks">
+                            <li><a href="#"><img src="../resource/fb.png"></a></li>
+                            <li><a href="#"><img src="../resource/inst.png"></a></li>
+                            <li><a href="#"><img src="../resource/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

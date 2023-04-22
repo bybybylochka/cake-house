@@ -1,0 +1,39 @@
+.menu{
+    padding: 45px 0px 121px;
+}
+
+.menu__title{
+    margin: 0px auto 79px;
+    text-align: center;
+}
+
+.menu__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__nav-block{
+    text-align: center;
+}
+.menu__nav-block__name{
+    @extend %font-primary;
+    color:$color-text;
+    @include font($size:3rem, $height:6rem);
+}
+
+.menu__products{
+    margin: 110px 0px;
+}
+.menu__product{
+    text-align: center;
+    .product__title{
+        margin: 26px auto 5px;
+    }
+    .product__description{
+        margin: 5px auto;
+        color: $color-text;
+    }
+    .product__weight{
+        margin: 5px auto;
+        color: $color-button;
+    }
+}

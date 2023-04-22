@@ -1,0 +1,32 @@
+.weekly-basket{
+    padding: 15px 0px 100px;
+}
+
+.weekly-baskets__title{
+    margin: 0px auto 70px;
+    text-align: center;
+}
+
+.weekly-basket__title{
+    margin: 0px;
+}
+
+.weekly-basket__text{
+    @include font($size:1.8rem, $height:2.6rem);
+    color:$color-text;
+    margin: 10px 0px 30px;
+}
+.weekly-basket__part{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include font($size:1.8rem, $height:2.6rem, $weight:600);
+}
+
+.weekly-basket__line{
+    margin: 6px 0px 25px;
+}
+
+.part__name{
+    margin: 15px 0px 0px;
+}

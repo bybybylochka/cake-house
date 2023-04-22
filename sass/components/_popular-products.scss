@@ -1,0 +1,35 @@
+.popular-products{
+    padding: 186px 0px 100px;
+    button{
+        margin-top: 70px;
+    }
+}
+
+.popular-products__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-products__title{
+    margin-bottom: 70px;
+}
+
+
+.popular-product__text{
+    color:$color-text;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.popular-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-product__title{
+    margin: 10px auto 8px auto;
+}
+ 

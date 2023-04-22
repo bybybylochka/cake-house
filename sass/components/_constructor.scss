@@ -1,0 +1,52 @@
+.constructor {
+  padding: 50px 0 150px;
+  label{
+    @include font($size:2.4rem, $height:6rem);
+    @extend %font-primary;
+    color: $color-text;
+    display: block;
+    margin-bottom: 10px;
+  }
+  select, input{
+    border: 1px solid #B6B3B3;
+    padding: 17px;
+    @include font($size:1.8rem, $height:2.6rem);
+    background-color: transparent;
+    width:100%;
+  }
+  .button{
+    margin-top: 51px;
+  }
+  p{
+    margin: 0px;
+  }
+}
+
+.constructor__price{
+  border: 1px solid #B6B3B3;
+  padding: 17px;
+  width: 20%;
+}
+
+.constructor__wrapper{
+  max-width: 1380px;
+}
+
+.constructor__title{
+  text-align: center;
+  margin: 0px auto 75px;
+}
+
+.constructor__name{
+  margin: 0 auto 15px;
+}
+
+.setting{
+  margin-bottom: 30px;
+
+}
+
+#wishe{
+  flex-basis: 95%;
+}
+

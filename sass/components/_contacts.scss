@@ -1,0 +1,25 @@
+.contacts{
+    padding: 69px 0px 169px;
+}
+
+.contacts .layout-2-column{
+    @include columns(40%);
+}
+
+.contacts__title{
+    margin: 99px auto 35px;
+}
+
+.contacts__phone h4, .contacts__address h4, .contacts__phone p, .contacts__address p{
+    margin: 10px auto;
+}
+
+.contacts__content{
+    background: url(../resource/ponchik.svg) no-repeat;
+    background-position: right 47px bottom 99px;
+}
+
+.map > *{
+    width: 100%;
+    height: 100%;
+}
