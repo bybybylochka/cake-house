@@ -7,19 +7,20 @@
     <link href="" rel="stylesheet">
     <link rel="stylesheet" href="../sass/style.css">
     <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header class="header header__account">
     <div class="wrapper header__wrapper">
         <div class="header__return">
-            <a class="return" href="#"><p>&lt; Главная</p></a>
+            <a class="return" href="main_page.html"><p>&lt; Главная</p></a>
         </div>
         <nav class="header__navigation">
             <ul class="navigation">
-                <li class="navigation__link">Меню</li>
-                <li class="navigation__link">О нас</li>
-                <li class="navigation__link">Доставка</li>
-                <li class="navigation__link">Контакты</li>
+                <li class="navigation__link"><a class="link-button" href="menu.html">Меню</a></li>
+                <li class="navigation__link"><a class="link-button" href="main_page.html#advantage">О нас</a></li>
+                <li class="navigation__link"><a class="link-button" href="placing_order.html">Корзина</a></li>
+                <li class="navigation__link"><a class="link-button" href="main_page.html#contacts">Контакты</a></li>
             </ul>
         </nav>
         <div class="header__button">
@@ -34,29 +35,30 @@
 </header>
 <main>
     <div class="personal-account">
-        <aside class="account-navigation">
+        <div class="account-navigation">
             <div class="wrapper account-navigation__wrapper">
                 <img src="../resource/user.svg">
                 <ul class="navigation">
-                    <li class="navigation__link">Мои данные</li>
-                    <li class="navigation__link">Адреса доставки</li>
-                    <li class="navigation__link">Мои заказы</li>
-                    <li class="navigation__link">Мои карты</li>
-                    <li class="navigation__link">Сменить аккаунт</li>
+                    <li class="navigation__link" id="personal-data">Мои данные</li>
+                    <li class="navigation__link" id="addresses">Адреса доставки</li>
+                    <li class="navigation__link" id="orders">Мои заказы</li>
+                    <li class="navigation__link" id="cards">Мои карты</li>
+                    <li class="navigation__link" id="logout">Сменить аккаунт</li>
                 </ul>
                 <p class="questions">Есть вопросы?</p>
             </div>
-        </aside>
-        <section class="account__personal-data">
+        </div>
+        <section class="account__data">
             <div class="wrapper account__wrapper">
+
                 <form class="layout-2-column">
                     <div class="personal-data">
                         <label for="name">Имя</label>
-                        <input id="name">
+                        <input id="name" placeholder="Введите имя">
                     </div>
                     <div class="personal-data">
                         <label for="surname">Фамилия</label>
-                        <input id="surname">
+                        <input id="surname" placeholder="Введите фамилию">
                     </div>
                     <div class="personal-data">
                         <label for="phone-number">Телефон</label>
@@ -64,16 +66,20 @@
                     </div>
                     <div class="personal-data">
                         <label for="email">Почта</label>
-                        <input id="email">
+                        <p id="email"></p>
                     </div>
                     <div class="personal-data">
                         <label for="birthday">Дата Рождения</label>
-                        <input id="birthday">
+                        <input id="birthday" placeholder="Введите дату рождения">
                     </div>
                     <div class="personal-data">
-                        <label for="discount">Постоянная скидка</label>
-                        <input id="discount">
+                        <label for="cost-of-purchases">Сумма покупок</label>
+                        <p id="cost-of-purchases"></p>
                     </div>
+                    <button class="button button_colored" id="change-personal-data">
+                        Изменить
+                        <hr class="button__line">
+                    </button>
                 </form>
             </div>
         </section>
@@ -116,6 +122,9 @@
             </div>
         </div>
     </div>
+    <script src="../functions/personal__account.js"></script>
+    <script src="../functions/personal_data.js"></script>
+    <script src="../functions/check-authorization.js"></script>
 </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@
   color:$color-text;
 }
 
-.placing-order__cart{
+.placing-order__cart, .placing-order__contacts{
   width:100%;
   margin-top: 28px;
 }
@@ -47,6 +47,7 @@ thead{
   }
   .product__image{
     margin-right: 28px;
+    width: 114px;
   }
   .product__weight{
     text-align: start;
@@ -88,7 +89,38 @@ tr{
 }
 
 .cart__buttons{
-  margin-top: 100px;
   display: flex;
   gap: 24px;
+}
+.cart__price{
+  @include font($size:2.4rem, $height:6rem, $weight:500);
+}
+
+.placing-order__contacts{
+  >*{
+    display: block;
+  }
+  input{
+    box-sizing: border-box;
+    border: 1px solid $color-text;
+    background: transparent;
+    padding: 16px;
+    width: 407px;
+    margin: 20px 0 42px;
+    @include font($size:1.8rem, $height:2.6rem);
+  }
+  margin: 40px 0;
+}
+
+.placing-order__delivery, .placing-order__payment{
+  margin: 40px 0;
+}
+
+.promocode, .select{
+  box-sizing: border-box;
+  border: 1px solid $color-text;
+  background: transparent;
+  padding: 14px;
+  width: 357px;
+  @include font($size:1.8rem, $height:2.6rem);
 }

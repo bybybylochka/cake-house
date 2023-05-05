@@ -5,7 +5,7 @@
     cursor: pointer;
     transition: all .3s; 
     border: none;
-    &_not-authorized{
+    &_not-authorized, &_authorized{
         background-color: transparent;
         @include font($size:1.8rem, $height:2.6rem, $weight:500);
         padding: 0px;

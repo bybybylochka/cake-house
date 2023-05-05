@@ -1,0 +1,29 @@
+<form class="placing-order__payment">
+    <p >Выберите способ оплаты: </p>
+    <label>
+        <input type="radio" name="payment-type" value="Наличные">Наличные
+    </label>
+    <label>
+        <input type="radio" name="payment-type" value="Карта">Карта
+    </label>
+    <div class="payment__information">
+
+    </div>
+</form>
+<div class="cart__price">
+    <p></p>
+</div>
+<div class="cart__buttons">
+    <label>
+        <input class="promocode" placeholder="Введите промокод" name="promocode">
+    </label>
+    <button class="button button_colored" id="apply-promocode">Применить
+        <hr class="button__line">
+    </button>
+    <button class="button button_colored" id="order-button">Заказать
+        <hr class="button__line">
+    </button>
+</div>
+<script src="../../functions/order-payment.js"></script>
+<script src="../../functions/order.js"></script>
+<script src="../../functions/promocode.js"></script>

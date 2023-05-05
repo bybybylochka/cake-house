@@ -1,0 +1,111 @@
+<h2 class="add-product__title">Добавление нового продукта</h2>
+<form id="add_product_form" class="layout-2-column" action="http://localhost:3000/products/create" method="post" enctype="multipart/form-data">
+    <div class="product-data">
+        <label for="product-img">Добавьте изображение:</label>
+        <input id="product-img" name="product_img" type="file">
+    </div>
+    <div class="product-data">
+        <label for="product-type">Введите тип изделия:</label>
+        <select id="product-type" name="product_type">
+            <option>Торты</option>
+            <option>Круассаны</option>
+            <option>Пончики</option>
+            <option>Сдоба</option>
+            <option>Выпечка</option>
+        </select>
+    </div>
+    <div class="product-data">
+        <label for="product-title">Введите название изделия:</label>
+        <input id="product-title" name="product_title">
+    </div>
+    <div class="product-data">
+        <label for="product-description">Введите описание изделия:</label>
+        <input id="product-description" name="product_description">
+    </div>
+    <div class="product-data">
+        <label for="product-weight">Введите вес изделия:</label>
+        <input id="product-weight" name="product_weight">
+    </div>
+    <div class="product-data">
+        <label for="product-composition">Введите состав изделия:</label>
+        <input id="product-composition" name="product_composition">
+    </div>
+    <div class="product-data">
+        <label for="product-calorie">Введите калорийность изделия:</label>
+        <input id="product-calorie" name="product_calorie">
+    </div>
+    <div class="product-data">
+        <label for="product-price">Введите цену изделия:</label>
+        <input id="product-price" name="product_price">
+    </div>
+    <div class="product-data">
+        <p>Можно ли изменять данное изделие:</p>
+        <label>
+            <input type="radio" name="product_modified" value="1">Да
+        </label>
+        <label>
+            <input type="radio" name="product_modified" value="0">Нет
+        </label>
+    </div>
+    <button type="submit" class="button button_colored" id="add_product">
+        Добавить
+        <hr class="button__line">
+    </button>
+</form>
+<h2>Просмотр информации о продуктах</h2>
+<div class="products__content">
+<!--    <button class="button button_colored" id="show-all_products">-->
+<!--        Показать информацию-->
+<!--        <hr class="button__line">-->
+<!--    </button>-->
+<!--    <button class="button button_colored" id="hide-all_products">-->
+<!--        Скрыть информацию-->
+<!--        <hr class="button__line">-->
+<!--    </button>-->
+</div>
+<h2>Обновление информации об изделиях</h2>
+<form id="update_product_form" class="layout-2-column">
+    <div class="product__data">
+        <label for="product-id">ID изделия</label>
+        <input id="product-id">
+    </div>
+    <div class="product__data">
+        <label for="product-field-update">Поле для редактирования</label>
+        <select id="product-field-update">
+            <option value="title">Наименование изделия</option>
+            <option value="weight">Вес изделия</option>
+            <option value="price">Цена изделия</option>
+            <option value="composition">Состав изделия</option>
+            <option value="calorieContent">Калорийность изделия</option>
+            <option value="description">Описание изделия</option>
+            <option value="modified">Изменяемость изделия</option>
+            <option value="img">Изображение изделия</option>
+        </select>
+    </div>
+    <div class="product__data">
+        <label for="product-update">Новое значение</label>
+        <input id="product-update">
+    </div>
+    <button class="button button_colored" id="update">
+        Изменить
+        <hr class="button__line">
+    </button>
+    <div class="product_updated">
+
+    </div>
+</form>
+<h2>Удаление информации об изделиях</h2>
+<form id="delete_product_form" class="layout-2-column">
+    <div class="product__data">
+        <label for="product-id-del">ID изделия</label>
+        <input id="product-id-del">
+    </div>
+    <button class="button button_colored" id="delete">
+        Удалить
+        <hr class="button__line">
+    </button>
+    <div class="product_deleted">
+
+    </div>
+</form>
+<script src="../../functions/admin-products-template.js"></script>

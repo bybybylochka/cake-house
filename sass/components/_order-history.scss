@@ -1,0 +1,33 @@
+.order-history{
+  display: flex;
+  flex-direction: column;
+}
+
+.order-history__order{
+  background-color: $color-table-headings;
+  padding: 20px;
+  .order__composition{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    >*{
+      @include font($size:1.4rem, $height:2rem);
+    }
+  }
+  p{
+    margin: 0;
+  }
+  .order__product{
+    background-color: $color-footer-headings;
+    padding: 30px 20px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img{
+      width:100px;
+      margin: auto;
+    }
+
+  }
+}

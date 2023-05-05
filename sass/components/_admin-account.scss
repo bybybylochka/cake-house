@@ -1,0 +1,51 @@
+#show-all_order{
+  display: none;
+}
+
+.empty{
+  margin: 100px;
+}
+
+.admin__data{
+  display: flex;
+  flex-basis: 67%;
+  .account__wrapper{
+    padding: 70px 55px 150px;
+
+  }
+  label{
+    display: block;
+    color:$color-text;
+    @extend %font-primary;
+    @include font($size:2.4rem, $height:6rem);
+  }
+  input, select{
+    box-sizing: border-box;
+    border: 1px solid $color-text;
+    background: transparent;
+    padding: 16px;
+    width: 407px;
+    margin-bottom: 42px;
+    @include font($size:1.8rem, $height:2.6rem);
+  }
+  input[type='radio']{
+    width: auto;
+  }
+  table{
+    margin: 50px 0;
+    td, th{
+      padding: 20px;
+    }
+  }
+}
+
+#add_product, #delete, #update{
+  align-self: center;
+  margin-right: auto;
+  margin-left: 80px;
+  flex-basis: 20%;
+}
+
+#delete, #update{
+  margin-top: 10px;
+}

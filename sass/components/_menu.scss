@@ -13,6 +13,7 @@
 }
 .menu__nav-block{
     text-align: center;
+    cursor: pointer;
 }
 .menu__nav-block__name{
     @extend %font-primary;
@@ -22,9 +23,16 @@
 
 .menu__products{
     margin: 110px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    >*{
+        flex-basis: 30%;
+    }
+    justify-content: space-between;
 }
 .menu__product{
     text-align: center;
+    margin-bottom: 60px;
     .product__title{
         margin: 26px auto 5px;
     }
@@ -36,4 +44,8 @@
         margin: 5px auto;
         color: $color-button;
     }
+    &:hover{
+        cursor: pointer;
+    }
+
 }

@@ -7,6 +7,7 @@
     <link href="" rel="stylesheet">
     <link rel="stylesheet" href="../sass/style.css">
     <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="body-entry">
 <header class="header">
@@ -33,22 +34,20 @@
     </div>
 </header>
 <main>
-    <section class="registration">
+    <section class="registration" >
         <div class="wrapper registration__wrapper">
             <h2 class="registration__title">Регистрация</h2>
-            <p class="registration__offer-entry">Есть аккаунт? <a class="link-entry" href="#">Войдите</a></p>
-            <form class="registration__form">
+            <p class="registration__offer-entry">Есть аккаунт? <a class="link-entry" href="entry.html">Войдите</a></p>
+            <form class="registration__form" action="http://localhost:3000/user/register" method="post" autocomplete="off">
                 <label for="mail">E-mail</label>
-                <input type="email" id="mail">
+                <input type="email" id="mail" name="mail">
                 <label for="phone">Телефон</label>
-                <input type="tel" id="phone">
+                <input type="tel" id="phone" name="phone">
                 <label for="password">Пароль</label>
-                <input type="password" id="password">
-                <a href="#" class="link-button">
-                    <button class="button button_colored">Зарегистрироваться
-                        <hr class="button__line">
-                    </button>
-                </a>
+                <input type="password" id="password" name="password">
+                <button type="submit" class="button button_colored" id="reg-button">Зарегистрироваться
+                    <hr class="button__line">
+                </button>
             </form>
         </div>
     </section>
@@ -90,6 +89,8 @@
             </div>
         </div>
     </div>
+    <script src="../functions/registration.js"></script>
+    <script src="../functions/check-authorization.js"></script>
 </footer>
 </body>
 </html>

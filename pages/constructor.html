@@ -6,6 +6,7 @@
     <title>Характеристики торта</title>
     <link rel="stylesheet" href="../sass/style.css">
     <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -15,10 +16,10 @@
         </div>
         <nav class="header__navigation">
             <ul class="navigation">
-                <li class="navigation__link">Меню</li>
-                <li class="navigation__link">О нас</li>
-                <li class="navigation__link">Доставка</li>
-                <li class="navigation__link">Контакты</li>
+                <li class="navigation__link"><a class="link-button" href="menu.html">Меню</a></li>
+                <li class="navigation__link"><a class="link-button" href="main_page.html#advantage">О нас</a></li>
+                <li class="navigation__link"><a class="link-button" href="placing_order.html">Корзина</a></li>
+                <li class="navigation__link"><a class="link-button" href="main_page.html#contacts">Контакты</a></li>
             </ul>
         </nav>
         <div class="header__button">
@@ -47,27 +48,30 @@
                            <select id="weight">
                                <option>500</option>
                                <option>700</option>
+                               <option>900</option>
+                               <option>1100</option>
+                               <option>1300</option>
+                               <option>1500</option>
                            </select>
                        </div>
                        <div class="setting">
                            <label for="tiers">Число ярусов</label>
                            <select id="tiers">
+                               <option>1</option>
                                <option>2</option>
                                <option>3</option>
                            </select>
                        </div>
                        <div class="setting">
                            <label for="color">Цвет</label>
-                           <select id="color">
-                               <option>red</option>
-                               <option>yellow</option>
-                           </select>
+                           <input type="color" id="color" name="color" >
                        </div>
                        <div class="setting">
                            <label for="decoration">Кол-во ягод</label>
                            <select id="decoration">
-                               <option>5</option>
-                               <option>10</option>
+                               <option>100</option>
+                               <option>300</option>
+                               <option>500</option>
                            </select>
                        </div>
                        <div class="setting" id="wishe">
@@ -77,7 +81,7 @@
                    </form>
                    <label>Стоимость</label>
                    <p class="constructor__price">90 BYN</p>
-                   <button class="button button_colored">Добавить в корзину
+                   <button class="button button_colored" id="add_modified_to_cart">Добавить в корзину
                        <hr class="button__line">
                    </button>
 
@@ -123,6 +127,10 @@
             </div>
         </div>
     </div>
+    <script src="../functions/check-authorization.js"></script>
+    <script src="../functions/constructor/constructor.js"></script>
+    <script src="../functions/cart/add_modified_to_cart.js"></script>
+
 </footer>
 </body>
 </html>

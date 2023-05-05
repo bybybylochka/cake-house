@@ -7,24 +7,25 @@
         <link href="" rel="stylesheet">
         <link rel="stylesheet" href="../sass/style.css">
         <link rel="icon" href="../resource/logo.svg" type="image/svg">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <header class="header">
             <div class="wrapper header__wrapper">
                 <div class="header__logo">
-                    <a class="logo" href="#"><img src="../resource/logo.svg"></a>
+                    <a class="logo" href="main_page.html"><img src="../resource/logo.svg"></a>
                 </div>
                 <nav class="header__navigation">
                     <ul class="navigation">
-                        <li class="navigation__link">Меню</li>
-                        <li class="navigation__link">О нас</li>
-                        <li class="navigation__link">Доставка</li>
-                        <li class="navigation__link">Контакты</li>
+                        <li class="navigation__link"><a class="link-button" href="menu.html">Меню</a></li>
+                        <li class="navigation__link"><a class="link-button" href="main_page.html#advantage">О нас</a></li>
+                        <li class="navigation__link"><a class="link-button" href="placing_order.html">Корзина</a></li>
+                        <li class="navigation__link"><a class="link-button" href="main_page.html#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__button">
                     <button class="button button_not-authorized">
-                        <a href="#" class="link-button">
+                        <a href="entry.html" class="link-button">
                             <img class="button_icon" src="../resource/user.svg">
                             <p class="button_text">Авторизоваться</p>
                         </a>
@@ -37,66 +38,31 @@
                 <div class="wrapper placing-order__wrapper">
                     <h2 class="placing-order__title">Оформление заказа</h2>
                     <div class="placing-order__navigation">
-                        <h5 class="order__nav-block__name">Ваша корзина</h5>
-                        <h5 class="order__nav-block__name">Контакты</h5>
-                        <h5 class="order__nav-block__name">Способ доставки</h5>
-                        <h5 class="order__nav-block__name">Способ оплаты</h5>
+                        <h5 class="order__nav-block__name" id="cart">Ваша корзина</h5>
+                        <h5 class="order__nav-block__name" id="contacts">Контакты</h5>
+                        <h5 class="order__nav-block__name" id="delivery">Способ доставки</h5>
+                        <h5 class="order__nav-block__name" id="payment">Способ оплаты</h5>
                     </div>
-                    <table class="placing-order__cart">
-                        <thead>
+                    <div class="order__information">
+                        <table class="placing-order__cart">
+                            <thead>
                             <th class="cart__header">Наименование</th>
                             <th class="cart__header">Количество</th>
                             <th class="cart__header">Сумма</th>
                             <th class="cart__header">Удалить</th>
-                        </thead>
-                        <tbody>
-                            <tr class="cart__product">
-                                <td class="product">
-                                    <img class="product__image" src="../resource/cheesecake.png">
-                                    <div class="product__short-description">
-                                        <h5 class="product__title">Чизкейк "Нью-Йорк"</h5>
-                                        <p class="product__weight">700 г</p>
-                                    </div>
-                                </td>
-                                <td class="product__quantity">
-                                    <div class="quantity__decrease">&lt;</div>
-                                    <div class="quantity">1</div>
-                                    <div class="quantity__increase">&gt;</div>
-                                </td>
-                                <td class="product__price">
-                                    <p>90 BYN</p>
-                                </td>
-                                <td class="product__remover">
-                                    <img src="../resource/x.png">
-                                </td>
-                            </tr>
-                            <tr class="cart__product">
-                                <td class="product">
-                                    <img class="product__image" src="../resource/cheesecake.png">
-                                    <div class="product__short-description">
-                                        <h5 class="product__title">Чизкейк "Нью-Йорк"</h5>
-                                        <p class="product__weight">700 г</p>
-                                    </div>
-                                </td>
-                                <td class="product__quantity">
-                                    <div class="quantity__decrease">&lt;</div>
-                                    <div class="quantity">1</div>
-                                    <div class="quantity__increase">&gt;</div>
-                                </td>
-                                <td class="product__price">
-                                    <p>90 BYN</p>
-                                </td>
-                                <td class="product__remover">
-                                    <img src="../resource/x.png">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="cart__buttons">
-                        <button class="button button_not-colored">Введите промокод</button>
-                        <button class="button button_colored">Применить
-                            <hr class="button__line">
-                        </button>
+                            </thead>
+                            <tbody id="table_body">
+                            </tbody>
+                        </table>
+                        <div class="cart__price">
+                            <p></p>
+                        </div>
+                        <div class="cart__buttons">
+
+                            <button class="button button_colored" id="order-button">Далее
+                                <hr class="button__line">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -138,6 +104,9 @@
                     </div>
                 </div>
             </div>
+            <script src="../functions/check-authorization.js"></script>
+<!--            <script src="../functions/placing-order.js"></script>-->
+            <script src="../functions/cart/show_cart.js"></script>
         </footer>
     </body>
 </html>

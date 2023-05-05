@@ -7,6 +7,7 @@
     <link href="" rel="stylesheet">
     <link rel="stylesheet" href="../sass/style.css">
     <link rel="icon" href="../resource/logo.svg" type="image/svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
     <body class="body-entry">
         <header class="header">
@@ -36,18 +37,16 @@
             <section class="entry">
                 <div class="wrapper entry__wrapper">
                     <h2 class="entry__title">Войти</h2>
-                    <p class="entry__offer-registration">Нет аккаунта? <a class="link-registration" href="#">Зарегистрируйтесь</a></p>
-                    <form class="entry__form">
-                        <label for="login">Логин</label>
-                        <input type="text" id="login">
+                    <p class="entry__offer-registration">Нет аккаунта? <a class="link-registration" href="registration.html">Зарегистрируйтесь</a></p>
+                    <form class="entry__form" autocomplete="off">
+                        <label for="mail">Логин</label>
+                        <input type="text" id="mail" name="mail">
                         <label for="password">Пароль</label>
-                        <input type="text" id="password">
+                        <input type="text" id="password" name="password">
                         <a href="#" class="link__forgot-password">Забыли пароль?</a>
-                        <a href="#" class="link-button">
-                            <button class="button button_colored">Войти
-                                <hr class="button__line">
-                            </button>
-                        </a>
+                        <button class="button button_colored" id="auth_button">Войти
+                            <hr class="button__line">
+                        </button>
                     </form>
                 </div>
             </section>
@@ -89,6 +88,8 @@
                     </div>
                 </div>
             </div>
+            <script src="../functions/authorization.js"></script>
+            <script src="../functions/check-authorization.js"></script>
         </footer>
     </body>
 </html>
