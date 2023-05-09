@@ -4,15 +4,18 @@
     <label>
         <input placeholder="Номер карты" id="cardNumber" name="cardNumber">
     </label>
+    <p class="invalidCardNumber"></p>
     <label>
         <input placeholder="Владелец" id="cardOwner" name="cardOwner">
     </label>
+    <p class="invalidCardOwner"></p>
     <label>
         <input placeholder="Срок действия" id="validityPeriod" name="validityPeriod">
     </label>
+    <p class="invalidCardDate"></p>
     <button class="button button_colored" id="add-card">
         Добавить
         <hr class="button__line">
     </button>
 </form>
-<script src="../../functions/card.js"></script>
+<script src="../../functions/user/card.js"></script>

@@ -63,3 +63,36 @@ button.addEventListener('click', (event)=>{
         }
     })
 })
+
+
+let houseInput=document.getElementById('house');
+let apartmentInput=document.getElementById('apartment');
+
+houseInput.addEventListener('change', (event)=>{
+    event.preventDefault();
+    let invalidText=document.querySelector(".invalidHouseNumber");
+    invalidText.textContent='';
+    let regex=/^-?\d+$/;
+    if(regex.test(houseInput.value)) {
+        button.disabled=false;
+
+    }
+    else{
+        invalidText.textContent='Номер дома не должен содержать специальные символы и буквы';
+        button.disabled=true;
+    }
+})
+
+apartmentInput.addEventListener('change', (event)=>{
+    event.preventDefault();
+    let invalidText=document.querySelector(".invalidApartmentNumber");
+    invalidText.textContent='';
+    let regex=/^-?\d+$/;
+    if(regex.test(apartmentInput.value)) {
+        button.disabled=false;
+    }
+    else{
+        invalidText.textContent='Номер квартиры не должен содержать специальные символы и буквы';
+        button.disabled=true;
+    }
+})

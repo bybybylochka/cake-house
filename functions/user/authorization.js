@@ -10,14 +10,23 @@ authenticationButton.addEventListener('click', (event) => {
             password: document.getElementById('password').value
         }),
         success: (data) => {
+            if(!data){
+                console.log("no user");
+            }
             localStorage.setItem('jwtToken', data);
             console.log("authorized");
             if(data==="admin"){
-                window.location.href="http://localhost:63342/cake-house/pages/admin_account.html";
+                window.location.href="../../pages/admin_account.html";
             }
             else{
-                window.location.href="http://localhost:63342/cake-house/pages/main_page.html";
+                window.location.href="../../pages/main_page.html";
             }
         }
+        // error:(err)=>{
+        //
+        //     // let invalidText=document.querySelector('.invalidAuthorizationData');
+        //     // invalidText.textContent='Неверный логин или пароль';
+        //
+        // }
     })
 })

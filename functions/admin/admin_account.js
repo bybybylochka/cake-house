@@ -22,5 +22,5 @@ let logoutButton=document.getElementById("logout");
 logoutButton.addEventListener('click', (event)=>{
     event.preventDefault();
     localStorage.removeItem("jwtToken");
-    window.location.href="http://localhost:63342/cake-house/pages/main_page.html";
+    window.location.href="../../pages/main_page.html";
 })

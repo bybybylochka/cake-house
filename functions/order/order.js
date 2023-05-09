@@ -55,7 +55,7 @@ orderButton.addEventListener('click', (event) => {
                             })
 
                             localStorage.removeItem(cartId);
-                            window.location.href = "http://localhost:63342/cake-house/pages/main_page.html"
+                            window.location.href = "../../pages/main_page.html"
                         }
                     })
                 }

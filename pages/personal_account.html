@@ -55,14 +55,17 @@
                     <div class="personal-data">
                         <label for="name">Имя</label>
                         <input id="name" placeholder="Введите имя">
+                        <p class="invalidName"></p>
                     </div>
                     <div class="personal-data">
                         <label for="surname">Фамилия</label>
                         <input id="surname" placeholder="Введите фамилию">
+                        <p class="invalidSurname"></p>
                     </div>
                     <div class="personal-data">
                         <label for="phone-number">Телефон</label>
                         <input id="phone-number">
+                        <p class="invalidPhone"></p>
                     </div>
                     <div class="personal-data">
                         <label for="email">Почта</label>
@@ -71,6 +74,7 @@
                     <div class="personal-data">
                         <label for="birthday">Дата Рождения</label>
                         <input id="birthday" placeholder="Введите дату рождения">
+                        <p class="invalidBirthday"></p>
                     </div>
                     <div class="personal-data">
                         <label for="cost-of-purchases">Сумма покупок</label>
@@ -122,9 +126,9 @@
             </div>
         </div>
     </div>
-    <script src="../functions/personal__account.js"></script>
-    <script src="../functions/personal_data.js"></script>
-    <script src="../functions/check-authorization.js"></script>
+    <script src="../functions/user/personal__account.js"></script>
+    <script src="../functions/user/personal_data.js"></script>
+    <script src="../functions/user/check-authorization.js"></script>
 </footer>
 </body>
 </html>
