@@ -11,6 +11,7 @@
   flex-basis: 67%;
   .account__wrapper{
     padding: 70px 55px 150px;
+    margin: 0;
 
   }
   label{
@@ -36,6 +37,9 @@
     td, th{
       padding: 20px;
     }
+  }
+  .button{
+    margin: 20px;
   }
 }
 

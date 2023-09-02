@@ -4,8 +4,6 @@ const Op = db.Sequelize.Op;
 
 
 exports.create = (req, res) => {
-    console.log(req.body);
-    console.log(req.files);
     const product = {
         img: req.body.product_img,
         title: req.body.product_title,
@@ -20,7 +18,6 @@ exports.create = (req, res) => {
     if(req.files) {
         product.img = '../' + req.files[0].path
     }
-
     Product.create(product)
         .then(data => {
             res.redirect("http://localhost:63342/cake-house/pages/admin_account.html");

@@ -59,5 +59,6 @@ function calculatePriceOfConstructor(weight, tiers, decoration){
     let indexTiers=optionsTiers.indexOf(selectedTiers);
     let indexDecor=optionsDecor.indexOf(selectedDecor);
     let new_price=basic_price+basic_price*(indexWeight)/10+basic_price*(indexTiers)/10+basic_price*(indexDecor)/10;
+    new_price=parseFloat(new_price.toFixed(2));
     productPrice.textContent=new_price;
 }

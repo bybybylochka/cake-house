@@ -37,23 +37,28 @@ exports.login = (req, res) => {
     const password = req.body.password;
     const mail = req.body.mail;
     if(mail==="admin_mail@mail.ru"&&password==="administration"){
-        res.send("admin");
+        const admin = "admin"
+        res.json({token: admin});
     }
     else {
         User.findOne({
             where: {mail: mail}
         })
             .then(async user => {
-
-                if (await bcrypt.compare(password, user.password)) {
-                    const jwtToken = jsonwebtoken.sign({
-                        id: user.id,
-                        mail: user.mail,
-                        password: user.password
-                    }, secret_key);
-                    res.send(jwtToken)
+                if (!user) {
+                    res.status(400).send("wrong login");
                 } else {
-                    res.status(500).send({message: "wrong password"})
+                    const isPasswordCorrect = await bcrypt.compare(password, user.password)
+                    if (isPasswordCorrect) {
+                        const token = jsonwebtoken.sign({
+                            id: user.id,
+                            mail: user.mail,
+                            password: user.password
+                        }, secret_key)
+                        res.json({token: token});
+                    } else {
+                        res.status(500).send({message: "wrong password"})
+                    }
                 }
             })
             .catch(err => {

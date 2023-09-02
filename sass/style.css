@@ -510,6 +510,9 @@ h1, h2, h3, h4, h5, .admin__data label, .account__data label, .constructor label
 .menu__product:hover {
   cursor: pointer;
 }
+.menu__product .product__image {
+  width: 337px;
+}
 
 .placing-order {
   padding: 50px 0px 100px;
@@ -949,6 +952,7 @@ tr {
 }
 .admin__data .account__wrapper {
   padding: 70px 55px 150px;
+  margin: 0;
 }
 .admin__data label {
   display: block;
@@ -978,6 +982,9 @@ tr {
 }
 .admin__data table td, .admin__data table th {
   padding: 20px;
+}
+.admin__data .button {
+  margin: 20px;
 }
 
 #add_product, #delete, #update {

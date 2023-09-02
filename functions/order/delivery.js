@@ -8,7 +8,6 @@ document.querySelector(".cart__price p").textContent=orderInfo.getAttribute("pri
 deliveryTypes.forEach(type=>{
     type.addEventListener('change', (event)=>{
         if(type.checked) selectedType=type;
-        console.log(selectedType);
         if(selectedType.value==="Самовывоз"){
             pickupTemplate();
             orderInfo.setAttribute("data-deliveryType", "Самовывоз");

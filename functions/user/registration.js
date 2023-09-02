@@ -12,7 +12,7 @@ registrationButton.addEventListener('click', (event) => {
         }),
         success: (data) => {
             localStorage.setItem('jwtToken', data);
-            window.location.href = "../../pages/main_page.html"
+            window.location.href = "http://localhost:63342/cake-house/pages/main_page.html"
         }
     })
 })
